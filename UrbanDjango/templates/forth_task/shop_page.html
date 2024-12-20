@@ -1,0 +1,12 @@
+{% extends "forth_task/menu.html" %}
+
+{% block pagename %}Магазин{% endblock %}
+
+{% block content %}
+<ul>
+    {% for i in list %}
+        <li>{{ i }} <button>Купить</button></li>
+    {% endfor %}
+</ul>
+<a href="/">Назад на главную страницу</a>
+{% endblock %}
